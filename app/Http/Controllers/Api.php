@@ -23,6 +23,7 @@ class Api extends Controller
             $user = $users::create([
                 'email' => $email,
                 'password' => bcrypt($password),
+                'remember_token' => $token,
             ]);
         } catch (\Exception $e) {
             $error = $e;

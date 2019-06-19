@@ -11,6 +11,7 @@ class Users extends Model
         'id',
         'email',
         'password',
+        'remember_token',
     ];
 
 
